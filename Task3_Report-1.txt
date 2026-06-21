@@ -1,0 +1,50 @@
+
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║          CAR PRICE PREDICTION — PROJECT REPORT                                 ║
+║          CodeAlpha Data Science Internship | Task 3                            ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+
+1. OBJECTIVE
+   Predict the resale selling price of used cars using machine learning regression
+   models based on car features such as brand, age, mileage, fuel type, and more.
+
+2. DATASET OVERVIEW
+   • Total Records  : 173
+   • Features       : 13
+   • Target Variable: Selling_Price (in Lakhs ₹)
+   • Price Range    : ₹0.35L – ₹33.00L
+   • Avg Price      : ₹6.54L
+
+3. FEATURE ENGINEERING
+   • Created 'Car_Age' from (2024 - Year)
+   • Label-encoded: Fuel_Type, Selling_type, Transmission
+   • Final features used: Present_Price, Driven_kms, Fuel_Type,
+     Selling_type, Transmission, Owner, Car_Age
+
+4. MODELS TRAINED & RESULTS
+   ┌─────────────────────┬────────┬────────┬────────┐
+   │ Model               │  MAE   │  RMSE  │   R²   │
+   ├─────────────────────┼────────┼────────┼────────┤
+   │ Linear Regression   │   1.98 │   3.08 │ 0.5579 │
+   │ Random Forest       │   1.23 │   1.69 │ 0.8670 │
+   │ Gradient Boosting   │   1.06 │   1.51 │ 0.8934 │
+   └─────────────────────┴────────┴────────┴────────┘
+
+5. BEST MODEL: Gradient Boosting
+   • R² Score : 0.8934  (explains 89.3% of price variance)
+   • MAE      : ₹1.06 Lakhs
+   • RMSE     : ₹1.51 Lakhs
+
+6. KEY INSIGHTS
+   • Present Price (ex-showroom) is the strongest predictor of resale value.
+   • Car Age has a strong negative correlation with resale price.
+   • Diesel-fuelled cars tend to have a higher resale value.
+   • Automatic transmission vehicles command a slight price premium.
+   • Lower driven kilometres positively impact the selling price.
+   • Dealer-sold cars generally fetch higher prices than individual sellers.
+
+7. CONCLUSION
+   The Gradient Boosting model achieved the highest R² of 0.8934, 
+   making it the most reliable model for car price prediction. 
+   The model can assist buyers, sellers, and dealerships in making 
+   data-driven pricing decisions.
