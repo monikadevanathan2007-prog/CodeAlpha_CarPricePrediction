@@ -87,3 +87,12 @@ supervised machine learning regression models.
 ---
 
 ## 📁 Project Structure
+CodeAlpha_CarPricePrediction/
+│
+├── car_price_prediction.py   # Main source code
+├── car_data.csv              # Dataset
+├── screenshot1_EDA.png       # Exploratory Data Analysis plots
+├── screenshot2_ModelPerformance.png  # Model comparison plots
+├── screenshot3_LinkedInCard.png      # LinkedIn summary card
+├── Task3_Report.txt          # Project report
+└── README.md
